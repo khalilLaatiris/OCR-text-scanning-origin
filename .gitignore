@@ -1,0 +1,8 @@
+# Ignore all .log files *.log # Ignore all files in any directory named temp temp/
+__pycache__/
+env/
+.log
+input/*
+output/*
+.png
+.roomodes
