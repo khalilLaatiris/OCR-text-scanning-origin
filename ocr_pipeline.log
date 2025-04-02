@@ -1,0 +1,254 @@
+2025-04-01 15:02:25,561 - __main__ - INFO - ocr_pipeline.py:173 - Starting OCR pipeline...
+2025-04-01 15:02:25,561 - __main__ - DEBUG - ocr_pipeline.py:174 - Input path: input/test.jpg
+2025-04-01 15:02:25,561 - __main__ - DEBUG - ocr_pipeline.py:175 - Output path: output
+2025-04-01 15:02:25,561 - __main__ - DEBUG - ocr_pipeline.py:176 - Image format: autodetect
+2025-04-01 15:02:25,561 - __main__ - DEBUG - ocr_pipeline.py:177 - Output format: TXT
+2025-04-01 15:02:25,561 - __main__ - DEBUG - ocr_pipeline.py:178 - Preprocess: True
+2025-04-01 15:02:25,561 - __main__ - DEBUG - ocr_pipeline.py:179 - Language: eng
+2025-04-01 15:02:25,561 - __main__ - DEBUG - ocr_pipeline.py:227 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:02:25,761 - __main__ - INFO - ocr_pipeline.py:86 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:02:35,395 - __main__ - INFO - ocr_pipeline.py:155 - No lines detected, skipping deskewing.
+2025-04-01 15:02:35,407 - __main__ - INFO - ocr_pipeline.py:254 - Processed image saved to: output\processed_image.png
+2025-04-01 15:02:35,477 - __main__ - ERROR - ocr_pipeline.py:266 - Error during OCR: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:02:35,477 - __main__ - INFO - ocr_pipeline.py:270 - OCR pipeline finished. Config loaded
+2025-04-01 15:05:20,510 - __main__ - INFO - ocr_pipeline.py:173 - Starting OCR pipeline...
+2025-04-01 15:05:20,510 - __main__ - DEBUG - ocr_pipeline.py:174 - Input path: input/test.jpg
+2025-04-01 15:05:20,510 - __main__ - DEBUG - ocr_pipeline.py:175 - Output path: output
+2025-04-01 15:05:20,510 - __main__ - DEBUG - ocr_pipeline.py:176 - Image format: autodetect
+2025-04-01 15:05:20,510 - __main__ - DEBUG - ocr_pipeline.py:177 - Output format: TXT
+2025-04-01 15:05:20,510 - __main__ - DEBUG - ocr_pipeline.py:178 - Preprocess: True
+2025-04-01 15:05:20,510 - __main__ - DEBUG - ocr_pipeline.py:179 - Language: eng
+2025-04-01 15:05:20,526 - __main__ - DEBUG - ocr_pipeline.py:227 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:05:20,693 - __main__ - INFO - ocr_pipeline.py:86 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:05:30,677 - __main__ - INFO - ocr_pipeline.py:155 - No lines detected, skipping deskewing.
+2025-04-01 15:05:30,690 - __main__ - INFO - ocr_pipeline.py:254 - Processed image saved to: output\processed_image.png
+2025-04-01 15:05:30,761 - __main__ - ERROR - ocr_pipeline.py:271 - Error during OCR: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:05:30,761 - __main__ - INFO - ocr_pipeline.py:275 - OCR pipeline finished. Config loaded
+2025-04-01 15:09:54,411 - __main__ - INFO - ocr_pipeline.py:173 - Starting OCR pipeline...
+2025-04-01 15:09:54,411 - __main__ - DEBUG - ocr_pipeline.py:174 - Input path: input/test.jpg
+2025-04-01 15:09:54,411 - __main__ - DEBUG - ocr_pipeline.py:175 - Output path: output
+2025-04-01 15:09:54,411 - __main__ - DEBUG - ocr_pipeline.py:176 - Image format: autodetect
+2025-04-01 15:09:54,411 - __main__ - DEBUG - ocr_pipeline.py:177 - Output format: TXT
+2025-04-01 15:09:54,411 - __main__ - DEBUG - ocr_pipeline.py:178 - Preprocess: True
+2025-04-01 15:09:54,411 - __main__ - DEBUG - ocr_pipeline.py:179 - Language: eng
+2025-04-01 15:09:54,420 - __main__ - DEBUG - ocr_pipeline.py:227 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:09:54,595 - __main__ - INFO - ocr_pipeline.py:86 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:10:04,397 - __main__ - INFO - ocr_pipeline.py:155 - No lines detected, skipping deskewing.
+2025-04-01 15:10:04,406 - __main__ - INFO - ocr_pipeline.py:254 - Processed image saved to: output\processed_image.png
+2025-04-01 15:10:04,406 - __main__ - DEBUG - ocr_pipeline.py:267 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:10:04,476 - __main__ - ERROR - ocr_pipeline.py:275 - Error during OCR: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:10:04,476 - __main__ - INFO - ocr_pipeline.py:279 - OCR pipeline finished. Config loaded
+2025-04-01 15:11:58,563 - __main__ - INFO - ocr_pipeline.py:173 - Starting OCR pipeline...
+2025-04-01 15:11:58,563 - __main__ - DEBUG - ocr_pipeline.py:174 - Input path: input/test.jpg
+2025-04-01 15:11:58,563 - __main__ - DEBUG - ocr_pipeline.py:175 - Output path: output
+2025-04-01 15:11:58,563 - __main__ - DEBUG - ocr_pipeline.py:176 - Image format: autodetect
+2025-04-01 15:11:58,563 - __main__ - DEBUG - ocr_pipeline.py:177 - Output format: TXT
+2025-04-01 15:11:58,563 - __main__ - DEBUG - ocr_pipeline.py:178 - Preprocess: True
+2025-04-01 15:11:58,563 - __main__ - DEBUG - ocr_pipeline.py:179 - Language: eng
+2025-04-01 15:11:58,563 - __main__ - DEBUG - ocr_pipeline.py:227 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:11:58,763 - __main__ - INFO - ocr_pipeline.py:86 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:12:09,395 - __main__ - INFO - ocr_pipeline.py:155 - No lines detected, skipping deskewing.
+2025-04-01 15:12:09,407 - __main__ - INFO - ocr_pipeline.py:254 - Processed image saved to: output\processed_image.png
+2025-04-01 15:12:09,409 - __main__ - DEBUG - ocr_pipeline.py:268 - Using Tesseract at: "C:/Program Files/Tesseract-OCR/tesseract.exe"
+2025-04-01 15:12:09,409 - __main__ - DEBUG - ocr_pipeline.py:269 - Full Tesseract command: ['"C:/Program Files/Tesseract-OCR/tesseract.exe"', '--version']
+2025-04-01 15:12:09,463 - __main__ - ERROR - ocr_pipeline.py:277 - Error during OCR: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:12:09,463 - __main__ - INFO - ocr_pipeline.py:281 - OCR pipeline finished. Config loaded
+2025-04-01 15:12:50,777 - __main__ - INFO - ocr_pipeline.py:173 - Starting OCR pipeline...
+2025-04-01 15:12:50,777 - __main__ - DEBUG - ocr_pipeline.py:174 - Input path: input/test.jpg
+2025-04-01 15:12:50,777 - __main__ - DEBUG - ocr_pipeline.py:175 - Output path: output
+2025-04-01 15:12:50,777 - __main__ - DEBUG - ocr_pipeline.py:176 - Image format: autodetect
+2025-04-01 15:12:50,777 - __main__ - DEBUG - ocr_pipeline.py:177 - Output format: TXT
+2025-04-01 15:12:50,777 - __main__ - DEBUG - ocr_pipeline.py:178 - Preprocess: True
+2025-04-01 15:12:50,777 - __main__ - DEBUG - ocr_pipeline.py:179 - Language: eng
+2025-04-01 15:12:50,777 - __main__ - DEBUG - ocr_pipeline.py:227 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:12:50,974 - __main__ - INFO - ocr_pipeline.py:86 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:13:01,491 - __main__ - INFO - ocr_pipeline.py:155 - No lines detected, skipping deskewing.
+2025-04-01 15:13:01,496 - __main__ - INFO - ocr_pipeline.py:254 - Processed image saved to: output\processed_image.png
+2025-04-01 15:13:01,496 - __main__ - DEBUG - ocr_pipeline.py:268 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:13:01,507 - __main__ - ERROR - ocr_pipeline.py:283 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:13:01,509 - __main__ - INFO - ocr_pipeline.py:287 - OCR pipeline finished. Config loaded
+2025-04-01 15:14:58,623 - __main__ - INFO - ocr_pipeline.py:173 - Starting OCR pipeline...
+2025-04-01 15:14:58,623 - __main__ - DEBUG - ocr_pipeline.py:174 - Input path: input/test.jpg
+2025-04-01 15:14:58,623 - __main__ - DEBUG - ocr_pipeline.py:175 - Output path: output
+2025-04-01 15:14:58,623 - __main__ - DEBUG - ocr_pipeline.py:176 - Image format: autodetect
+2025-04-01 15:14:58,623 - __main__ - DEBUG - ocr_pipeline.py:177 - Output format: TXT
+2025-04-01 15:14:58,623 - __main__ - DEBUG - ocr_pipeline.py:178 - Preprocess: True
+2025-04-01 15:14:58,623 - __main__ - DEBUG - ocr_pipeline.py:179 - Language: eng
+2025-04-01 15:14:58,623 - __main__ - DEBUG - ocr_pipeline.py:227 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:14:58,774 - __main__ - INFO - ocr_pipeline.py:86 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:15:08,267 - __main__ - INFO - ocr_pipeline.py:155 - No lines detected, skipping deskewing.
+2025-04-01 15:15:08,280 - __main__ - INFO - ocr_pipeline.py:254 - Processed image saved to: output\processed_image.png
+2025-04-01 15:15:08,282 - __main__ - DEBUG - ocr_pipeline.py:268 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:15:08,282 - __main__ - ERROR - ocr_pipeline.py:283 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:15:08,282 - __main__ - INFO - ocr_pipeline.py:287 - OCR pipeline finished. Config loaded
+2025-04-01 15:15:20,582 - __main__ - INFO - ocr_pipeline.py:173 - Starting OCR pipeline...
+2025-04-01 15:15:20,582 - __main__ - DEBUG - ocr_pipeline.py:174 - Input path: input/test.jpg
+2025-04-01 15:15:20,582 - __main__ - DEBUG - ocr_pipeline.py:175 - Output path: output
+2025-04-01 15:15:20,582 - __main__ - DEBUG - ocr_pipeline.py:176 - Image format: autodetect
+2025-04-01 15:15:20,582 - __main__ - DEBUG - ocr_pipeline.py:177 - Output format: TXT
+2025-04-01 15:15:20,582 - __main__ - DEBUG - ocr_pipeline.py:178 - Preprocess: True
+2025-04-01 15:15:20,582 - __main__ - DEBUG - ocr_pipeline.py:179 - Language: eng
+2025-04-01 15:15:20,582 - __main__ - DEBUG - ocr_pipeline.py:227 - Tesseract path: None
+2025-04-01 15:15:20,732 - __main__ - INFO - ocr_pipeline.py:86 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:15:29,685 - __main__ - INFO - ocr_pipeline.py:155 - No lines detected, skipping deskewing.
+2025-04-01 15:15:29,687 - __main__ - INFO - ocr_pipeline.py:254 - Processed image saved to: output\processed_image.png
+2025-04-01 15:15:29,687 - __main__ - ERROR - ocr_pipeline.py:283 - Error during OCR: isfile: path should be string, bytes, os.PathLike or integer, not NoneType
+2025-04-01 15:15:29,687 - __main__ - INFO - ocr_pipeline.py:287 - OCR pipeline finished. Config loaded
+2025-04-01 15:16:23,453 - __main__ - INFO - ocr_pipeline.py:173 - Starting OCR pipeline...
+2025-04-01 15:16:23,453 - __main__ - DEBUG - ocr_pipeline.py:174 - Input path: input/test.jpg
+2025-04-01 15:16:23,453 - __main__ - DEBUG - ocr_pipeline.py:175 - Output path: output
+2025-04-01 15:16:23,453 - __main__ - DEBUG - ocr_pipeline.py:176 - Image format: autodetect
+2025-04-01 15:16:23,453 - __main__ - DEBUG - ocr_pipeline.py:177 - Output format: TXT
+2025-04-01 15:16:23,453 - __main__ - DEBUG - ocr_pipeline.py:178 - Preprocess: True
+2025-04-01 15:16:23,453 - __main__ - DEBUG - ocr_pipeline.py:179 - Language: eng
+2025-04-01 15:16:23,453 - __main__ - DEBUG - ocr_pipeline.py:227 - Tesseract path: None
+2025-04-01 15:16:23,620 - __main__ - INFO - ocr_pipeline.py:86 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:16:32,356 - __main__ - INFO - ocr_pipeline.py:155 - No lines detected, skipping deskewing.
+2025-04-01 15:16:32,366 - __main__ - INFO - ocr_pipeline.py:254 - Processed image saved to: output\processed_image.png
+2025-04-01 15:16:32,366 - __main__ - ERROR - ocr_pipeline.py:283 - Error during OCR: isfile: path should be string, bytes, os.PathLike or integer, not NoneType
+2025-04-01 15:16:32,369 - __main__ - INFO - ocr_pipeline.py:287 - OCR pipeline finished. Config loaded
+2025-04-01 15:23:09,182 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:23:09,182 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:23:09,182 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:23:09,182 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:23:09,182 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:23:09,182 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: True
+2025-04-01 15:23:09,182 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:23:09,182 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: None
+2025-04-01 15:23:09,548 - __main__ - INFO - ocr_pipeline.py:82 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:23:12,479 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9909194858001216
+2025-04-01 15:23:12,529 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:23:12,529 - __main__ - ERROR - ocr_pipeline.py:303 - Error during OCR: isfile: path should be string, bytes, os.PathLike or integer, not NoneType
+2025-04-01 15:23:12,529 - __main__ - INFO - ocr_pipeline.py:307 - OCR pipeline finished. Config loaded
+2025-04-01 15:25:03,737 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:25:03,737 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:25:03,737 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:25:03,737 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:25:03,737 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:25:03,737 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: True
+2025-04-01 15:25:03,737 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:25:03,737 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: None
+2025-04-01 15:25:04,032 - __main__ - INFO - ocr_pipeline.py:82 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:25:06,887 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9909194858001216
+2025-04-01 15:25:06,935 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:25:06,935 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-04-01 15:25:06,935 - __main__ - ERROR - ocr_pipeline.py:295 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:25:06,935 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 15:26:19,990 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:26:19,990 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:26:19,990 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:26:19,990 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:26:19,990 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:26:19,990 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: True
+2025-04-01 15:26:19,990 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:26:19,990 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: None
+2025-04-01 15:26:20,295 - __main__ - INFO - ocr_pipeline.py:82 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:26:23,009 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9909194858001216
+2025-04-01 15:26:23,065 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:26:23,067 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-04-01 15:26:23,067 - __main__ - ERROR - ocr_pipeline.py:295 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:26:23,067 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 15:26:58,263 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:26:58,263 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:26:58,263 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:26:58,263 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:26:58,263 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:26:58,263 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: True
+2025-04-01 15:26:58,263 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:26:58,263 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: None
+2025-04-01 15:26:58,610 - __main__ - INFO - ocr_pipeline.py:82 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:27:01,569 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9909194858001216
+2025-04-01 15:27:01,614 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:27:01,614 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:27:01,624 - __main__ - ERROR - ocr_pipeline.py:295 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:27:01,624 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 15:28:55,463 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:28:55,463 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:28:55,463 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:28:55,463 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:28:55,463 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:28:55,463 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: True
+2025-04-01 15:28:55,463 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:28:55,477 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:28:55,830 - __main__ - INFO - ocr_pipeline.py:82 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:28:58,730 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9909194858001216
+2025-04-01 15:28:58,780 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:28:58,780 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:28:58,795 - __main__ - ERROR - ocr_pipeline.py:295 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:28:58,795 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 15:32:01,771 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:32:01,771 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:32:01,771 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:32:01,771 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:32:01,771 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:32:01,771 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: True
+2025-04-01 15:32:01,771 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:32:01,771 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:32:02,153 - __main__ - INFO - ocr_pipeline.py:82 - Applying preprocessing to image: input/test.jpg
+2025-04-01 15:32:04,977 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9909194858001216
+2025-04-01 15:32:05,037 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:32:05,037 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:32:05,037 - __main__ - ERROR - ocr_pipeline.py:295 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:32:05,045 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 15:32:13,086 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:32:13,086 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:32:13,086 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:32:13,086 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:32:13,086 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:32:13,101 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: False
+2025-04-01 15:32:13,102 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:32:13,102 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:32:13,442 - __main__ - INFO - ocr_pipeline.py:108 - Skipping preprocessing for image: input/test.jpg
+2025-04-01 15:32:13,552 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9592348169760119
+2025-04-01 15:32:13,643 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:32:13,643 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:32:13,645 - __main__ - ERROR - ocr_pipeline.py:295 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:32:13,645 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 15:33:02,608 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:33:02,608 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:33:02,608 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:33:02,608 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:33:02,608 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:33:02,608 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: False
+2025-04-01 15:33:02,608 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:33:02,625 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:33:02,950 - __main__ - INFO - ocr_pipeline.py:108 - Skipping preprocessing for image: input/test.jpg
+2025-04-01 15:33:03,053 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9592348169760119
+2025-04-01 15:33:03,146 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:33:03,146 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:33:03,154 - __main__ - ERROR - ocr_pipeline.py:295 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:33:03,154 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 15:40:23,214 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 15:40:23,214 - __main__ - DEBUG - ocr_pipeline.py:187 - Input path: input/test.jpg
+2025-04-01 15:40:23,230 - __main__ - DEBUG - ocr_pipeline.py:188 - Output path: output
+2025-04-01 15:40:23,230 - __main__ - DEBUG - ocr_pipeline.py:189 - Image format: autodetect
+2025-04-01 15:40:23,230 - __main__ - DEBUG - ocr_pipeline.py:190 - Output format: TXT
+2025-04-01 15:40:23,230 - __main__ - DEBUG - ocr_pipeline.py:191 - Preprocess: False
+2025-04-01 15:40:23,230 - __main__ - DEBUG - ocr_pipeline.py:192 - Language: eng
+2025-04-01 15:40:23,230 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:40:23,545 - __main__ - INFO - ocr_pipeline.py:108 - Skipping preprocessing for image: input/test.jpg
+2025-04-01 15:40:23,655 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9592348169760119
+2025-04-01 15:40:23,747 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 15:40:23,747 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:/Program Files/Tesseract-OCR/tesseract.exe
+2025-04-01 15:40:23,747 - __main__ - ERROR - ocr_pipeline.py:295 - Error during OCR: Tesseract verification failed: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-04-01 15:40:23,751 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 21:03:14,229 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 21:03:14,229 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-04-01 21:03:15,689 - __main__ - INFO - ocr_pipeline.py:108 - Skipping preprocessing for image: input/test.jpg
+2025-04-01 21:03:15,791 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: -1.9592348169760119
+2025-04-01 21:03:15,864 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 21:03:15,864 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-04-01 21:03:15,885 - __main__ - DEBUG - ocr_pipeline.py:285 - Tesseract version: 5.5.0.20241111
+2025-04-01 21:03:17,140 - __main__ - INFO - ocr_pipeline.py:292 - OCR output saved to: output\ocr_output.txt
+2025-04-01 21:03:17,140 - __main__ - INFO - ocr_pipeline.py:299 - OCR pipeline finished. Config loaded
+2025-04-01 21:45:41,377 - __main__ - INFO - ocr_pipeline.py:186 - Starting OCR pipeline...
+2025-04-01 21:45:41,377 - __main__ - DEBUG - ocr_pipeline.py:241 - Tesseract path: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-04-01 21:45:41,672 - __main__ - INFO - ocr_pipeline.py:82 - Applying preprocessing to image: input/large.png
+2025-04-01 21:45:41,991 - __main__ - DEBUG - ocr_pipeline.py:155 - Deskew angle: 0.0
+2025-04-01 21:45:42,007 - __main__ - INFO - ocr_pipeline.py:268 - Processed image saved to: output\processed_image.png
+2025-04-01 21:45:42,007 - __main__ - DEBUG - ocr_pipeline.py:280 - Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-04-01 21:45:42,028 - __main__ - DEBUG - ocr_pipeline.py:285 - Tesseract version: 5.5.0.20241111
+2025-04-01 21:45:42,450 - __main__ - INFO - ocr_pipeline.py:293 - OCR output saved to: output\ocr_output.txt
+2025-04-01 21:45:42,450 - __main__ - INFO - ocr_pipeline.py:300 - OCR pipeline finished. Config loaded
+2025-04-02 10:27:23,305 - __main__ - INFO - main.py:80 - Saved processed image to: output/processed_image.png
+2025-04-02 10:27:25,138 - __main__ - INFO - main.py:89 - OCR results saved to: output/ocr_output.txt
