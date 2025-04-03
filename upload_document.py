@@ -66,7 +66,7 @@ class UploadPanel:
         if os.path.getsize(path) > 10*1024*1024:  # 10MB limit
             logging.error("File too large")
             return False
-        return path.lower().endswith(('.png', '.jpg', '.jpeg', '.tiff'))
+        return path.lower().endswith(('.png', '.jpg', '.jpeg'))
 
     def clear_files(self):
         self.file_listbox.delete(0, tk.END)

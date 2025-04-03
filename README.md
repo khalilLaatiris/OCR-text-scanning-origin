@@ -7,23 +7,16 @@ This project is an OCR (Optical Character Recognition) pipeline designed to proc
 To set up the project, follow these steps:
 
 1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   ```
+   git clone https://github.com/khalilLaatiris/OCR-text-scanning-origin.git
    ```
 
 2. Set up a virtual environment (optional but recommended):
    ```bash
-   python -m venv env
-   source env/bin/activate  # On Windows, use `env\Scripts\activate`
+   sh setup_env.sh  # On Windows, use `setup_env.bat`
    ```
 
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Make sure that Tesseract OCR is installed on your system. For installation instructions, refer to the [Tesseract OCR GitHub page](https://github.com/tesseract-ocr/tesseract).
+3. Make sure that Tesseract OCR is installed on your system. For installation instructions, refer to the [Tesseract OCR GitHub page](https://github.com/tesseract-ocr/tesseract).
 
 ## Usage
 
@@ -59,6 +52,7 @@ The project requires the following Python packages (see `requirements.txt` for s
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
+you want to descuss ? see (my portfolio)[../khalillaatiris]
 
 ## License
 

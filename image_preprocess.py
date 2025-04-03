@@ -13,7 +13,8 @@ class ImagePreprocessor:
     def __init__(self, parent, image_path):
         self.root = Toplevel(parent)
         self.root.title("Image Preprocessing")
-        
+        self.root.geometry("1080x720")  # Main window size set here
+        self.root.minsize(1024, 600)
         self.image_path = image_path
         self.original_image = cv2.imread(image_path)
         if self.original_image is None:
@@ -29,20 +30,21 @@ class ImagePreprocessor:
         # Main frame
         self.main_frame = ttk.Frame(self.root)
         self.main_frame.pack(fill=BOTH, expand=True)
+
         
         # Image display
         self.image_panel = tk.Canvas(self.main_frame)
         self.image_panel.pack(side=LEFT, fill=BOTH, expand=True)
         
         # Toolbar
-        toolbar = ttk.Frame(self.main_frame)
+        toolbar = ttk.Frame(self.main_frame,height=720,width=1080)
         toolbar.pack(side=RIGHT, fill=Y, padx=5, pady=5)
         
         # Processing buttons
         ttk.Button(toolbar, text="Rotate", command=self.rotate_dialog).pack(pady=2, fill=X)
         ttk.Button(toolbar, text="Crop", command=self.start_crop).pack(pady=2, fill=X)
-        ttk.Button(toolbar, text="Contrast", command=self.contrast_dialog).pack(pady=2, fill=X)
-        ttk.Button(toolbar, text="Binarize", command=self.binarize_image).pack(pady=2, fill=X)
+        # ttk.Button(toolbar, text="Contrast", command=self.contrast_dialog).pack(pady=2, fill=X)
+        # ttk.Button(toolbar, text="Binarize", command=self.binarize_image).pack(pady=2, fill=X)
         ttk.Button(toolbar, text="Deskew", command=self.deskew_image).pack(pady=2, fill=X)
         ttk.Button(toolbar, text="Undo", command=self.undo_edit).pack(pady=2, fill=X)
         ttk.Button(toolbar, text="Redo", command=self.redo_edit).pack(pady=2, fill=X)
@@ -102,7 +104,7 @@ class ImagePreprocessor:
         M = cv2.getRotationMatrix2D(center, angle, 1.0)
         self.current_image = cv2.warpAffine(self.current_image, M, (w, h))
         self.show_image()
-        
+    
     def start_crop(self):
         self.crop_start = None
         self.crop_rect = None
@@ -110,38 +112,71 @@ class ImagePreprocessor:
         self.image_panel.bind("<B1-Motion>", self.crop_drag)
         self.image_panel.bind("<ButtonRelease-1>", self.crop_release)
         self.status.config(text="Select area to crop")
-        
+
     def crop_press(self, event):
         self.crop_start = (event.x, event.y)
-        
+
     def crop_drag(self, event):
         if self.crop_rect:
             self.image_panel.delete(self.crop_rect)
         x1, y1 = self.crop_start
         x2, y2 = event.x, event.y
         self.crop_rect = self.image_panel.create_rectangle(x1, y1, x2, y2, outline='red')
-        
+
     def crop_release(self, event):
-        x1, y1 = self.crop_start
-        x2, y2 = event.x, event.y
-        self.image_panel.delete(self.crop_rect)
-        
+        # Get display scaling and offset from image display
+        scale = getattr(self, 'display_scale', 1.0)
+        offset_x = getattr(self, 'display_offset_x', 0)
+        offset_y = getattr(self, 'display_offset_y', 0)
+
         # Convert screen coordinates to image coordinates
-        img_width = self.image_panel.winfo_width()
-        img_height = self.image_panel.winfo_height()
+        x1 = int((self.crop_start[0] - offset_x) / scale)
+        y1 = int((self.crop_start[1] - offset_y) / scale)
+        x2 = int((event.x - offset_x) / scale)
+        y2 = int((event.y - offset_y) / scale)
+
+        # Ensure coordinates are within image bounds
         h, w = self.current_image.shape[:2]
+        x1, x2 = sorted([max(0, min(x1, w)), max(0, min(x2, w))])
+        y1, y2 = sorted([max(0, min(y1, h)), max(0, min(y2, h))])
+
+        # Apply crop if valid region
+        if x2 > x1 and y2 > y1:
+            self.edit_stack.append(self.current_image.copy())
+            self.redo_stack.clear()
+            self.current_image = self.current_image[y1:y2, x1:x2]
+            self.show_image()
         
-        x1 = int((x1 / img_width) * w)
-        x2 = int((x2 / img_width) * w)
-        y1 = int((y1 / img_height) * h)
-        y2 = int((y2 / img_height) * h)
-        
-        self.edit_stack.append(self.current_image.copy())
-        self.redo_stack.clear()
-        self.current_image = self.current_image[min(y1,y2):max(y1,y2), min(x1,x2):max(x1,x2)]
-        self.show_image()
+        self.image_panel.delete(self.crop_rect)
         self.status.config(text="Ready")
+
+    # Add this to your image display method
+    def show_image(self):
+        # Convert OpenCV image to RGB
+        img = cv2.cvtColor(self.current_image, cv2.COLOR_BGR2RGB)
+        h, w = img.shape[:2]
         
+        # Calculate scaling and offset for display
+        panel_width = self.image_panel.winfo_width()
+        panel_height = self.image_panel.winfo_height()
+        scale = min(panel_width / w, panel_height / h)
+        self.display_scale = scale
+        self.display_offset_x = (panel_width - w * scale) / 2
+        self.display_offset_y = (panel_height - h * scale) / 2
+        
+        # Resize image for display
+        display_w = int(w * scale)
+        display_h = int(h * scale)
+        img_resized = cv2.resize(img, (display_w, display_h))
+        
+        # Update display (using PIL for compatibility)
+        self.tk_image = ImageTk.PhotoImage(Image.fromarray(img_resized))
+        self.image_panel.create_image(
+            self.display_offset_x, 
+            self.display_offset_y, 
+            anchor="nw", 
+            image=self.tk_image
+        )
     def contrast_dialog(self):
         dialog = Toplevel(self.root)
         dialog.title("Adjust Contrast")
@@ -149,7 +184,8 @@ class ImagePreprocessor:
         alpha = DoubleVar(value=1.0)
         ttk.Scale(dialog, from_=0.1, to=3.0, variable=alpha).pack(padx=10, pady=5)
         ttk.Button(dialog, text="Apply",
-                 command=lambda: self.apply_contrast(alpha.get())).pack(pady=5)
+                 command=lambda: (self.apply_contrast(alpha.get()),dialog.destroy())).pack(pady=5)
+        
         
     def apply_contrast(self, alpha):
         self.edit_stack.append(self.current_image.copy())

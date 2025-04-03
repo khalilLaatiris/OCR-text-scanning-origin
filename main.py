@@ -19,7 +19,7 @@ class OCRApplication:
         
         self.current_docs = []
         self.processed_images = []
-        self.ocr_results = queue.Queue()
+        self.ocr_results = []
         self.setup_ui()
         self.setup_threading()
         
@@ -74,8 +74,8 @@ class OCRApplication:
         for idx, path in enumerate(self.upload_panel.file_listbox.get(0, tk.END)):
             try:
                 preprocessor = ImagePreprocessor(self.root, path)
-                self.processed_images.append(preprocessor.current_image)
-                cv2.imwrite(f"processed_{idx}.png", preprocessor.current_image)
+                self.processed_images.append(preprocessor)
+                # cv2.imwrite(f"processed_{idx}.png", preprocessor.current_image)
                 self.progress["value"] = (idx+1)/total * 100
             except Exception as e:
                 logging.error(f"Preprocessing failed: {e}")
@@ -103,20 +103,19 @@ class OCRApplication:
         ocr_engine = OCREngine(Config())
         
         
-        logging.debug(f"OCR set{str(ocr_engine.config)}")
-        for idx, img in enumerate(self.processed_images):
+        for idx, img_processor in enumerate(self.processed_images):
             try:
-                logging.info(f"image object{str(img.shape)}")
-                cv2_image =cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
-                print(type(img),"\t",img.shape)
-                result = ocr_engine.process_image(cv2_image)
-                self.ocr_results.put((f"processed_{idx}.png", result))
+                result = ocr_engine.process_image(cv2.cvtColor(img_processor.current_image,cv2.COLOR_RGB2GRAY))
+                self.ocr_results.append(
+                    {
+                        "input_file": img_processor.image_path,
+                        "process_image" : img_processor.current_image,
+                        "text": result,
+                    })
                 self.progress["value"] = (idx+1)/total * 100
             except Exception as e:
                 logging.error(f"OCR failed: {e}")
-                logging.info(f"image object{img}")
-                raise
-                
+                                
         self.btn_results["state"] = tk.NORMAL
         self.status["text"] = "OCR processing complete"
         
@@ -127,8 +126,9 @@ class OCRApplication:
             self.progress["value"] = 0
             
     def show_results(self):
-        while not self.ocr_results.empty():
-            img_path, text = self.ocr_results.get()
+        for image_processor in self.ocr_results:
+            img_path = image_processor["input_file"]
+            text = image_processor["text"]
             ResultDisplay(self.root, img_path, text)
             
     def run(self):

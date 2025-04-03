@@ -9,6 +9,7 @@ class ResultDisplay:
     def __init__(self, parent, image_path, ocr_text):
         self.root = tk.Toplevel(parent)
         self.root.title("OCR Results")
+        self.root.state("zoomed")
         
         self.image_path = image_path
         self.original_text = ocr_text
