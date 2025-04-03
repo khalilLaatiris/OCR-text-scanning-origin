@@ -52,7 +52,7 @@ The project requires the following Python packages (see `requirements.txt` for s
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
-you want to descuss ? see (my portfolio)[../khalillaatiris]
+you want to descuss ? see (my portfolio)[..\khalillaatiris]
 
 ## License
 
