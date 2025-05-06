@@ -16,25 +16,127 @@ To set up the project, follow these steps:
    sh setup_env.sh  # On Windows, use `setup_env.bat`
    ```
 
-3. Make sure that Tesseract OCR is installed on your system. For installation instructions, refer to the [Tesseract OCR GitHub page](https://github.com/tesseract-ocr/tesseract).
+3. Install GUI dependencies:
+   ```bash
+   python3 -m pip install tk
+   ```
+
+4. Ensure Tesseract OCR is installed on your system. For installation instructions, refer to the [Tesseract OCR GitHub page](https://github.com/tesseract-ocr/tesseract).
 
 ## Usage
 
-To run the main script, use the following command:
-```bash
-python main.py
-```
+1. Launch the application:
+   ```bash
+   python main.py
+   ```
 
-### Configuration
+2. GUI Workflow:
+   1. Select image using "Upload Document" button
+   2. Adjust processing parameters if needed
+   3. Click "Process Image" to start OCR
+   4. View results in the text display area
+   5. Use "Clear All" to reset or "Export" to save results
+
+![GUI Preview](docs/gui_preview.png)
+
+### Key Features
+- Asynchronous processing with progress updates
+- Dark/Light mode toggle
+- Input validation with immediate feedback
+- Error handling with user-friendly messages
+
+## Configuration
 
 The `config.py` file contains configuration settings for the OCR pipeline. Make sure to set the appropriate environment variables if needed (e.g., Tesseract path).
 
-### Main Modules
+## Main Modules
 
-- `image_preprocess.py`: Handles image preprocessing tasks such as noise reduction, binarization, and other image enhancements.
-- `ocr_engine.py`: Contains the main OCR processing logic using `pytesseract`.
-- `result_display.py`: Displays the OCR results in a user-friendly format.
-- `upload_document.py`: Handles the uploading of documents for OCR processing.
+### OCRApplication Class Structure
+The core GUI application built with Tkinter implements the Model-View-Controller pattern:
+
+```python
+class OCRApplication:
+    def __init__(self, root: Tk)  # Initializes main window and components
+    def create_widgets(self)       # Constructs UI layout
+    def init_upload_panel(self)    # Configures file upload section
+    def init_control_buttons(self) # Sets up action buttons
+    def init_status_bar(self)      # Creates progress/status indicators
+    def process_image(self)        # Manages OCR processing pipeline
+    def toggle_dark_mode(self)     # Handles theme switching
+    def validate_inputs(self)      # Performs pre-processing checks
+    def thread_safe_update(self, func, *args)  # Ensures GUI thread safety
+```
+
+### GUI Component Breakdown
+
+#### Upload Panel
+- File selection dialog supporting common image formats (PNG, JPG, BMP)
+- Preview thumbnail generation
+- Drag-and-drop functionality
+- File size and type validation
+
+#### Control Buttons
+1. **Process Image**:
+   - Initiates OCR pipeline
+   - Disables during processing to prevent duplicate requests
+   - Shows animated loading state
+
+2. **Toggle Dark Mode**:
+   - Switches between light/dark themes
+   - Persists preference across sessions
+
+3. **Clear All**:
+   - Resets input fields
+   - Clears preview images and text results
+   - Resets status indicators
+
+#### Status Bars
+- Real-time processing stages:
+  1. File upload validation
+  2. Image preprocessing
+  3. OCR extraction
+  4. Post-processing
+- Error message display with auto-clear timer
+- Progress percentage indicator
+
+### Workflow Sequence
+1. User selects image file through Upload Panel
+2. Application validates file format and size
+3. Validated image passes to preprocessing module
+4. OCR engine processes image using worker thread
+5. Results are parsed and formatted for display
+6. Final text output appears in scrollable text area
+7. User can export results or restart process
+
+### Threading Architecture
+- **Main Thread**:
+  - Handles all GUI updates and user interactions
+  - Manages UI state changes
+  - Uses `thread_safe_update` wrapper for cross-thread operations
+
+- **Worker Thread**:
+  ```python
+  threading.Thread(target=self.process_image).start()
+  ```
+  - Executes CPU-intensive OCR operations
+  - Communicates progress through queue system
+  - Implements timeout safeguards
+
+### Error Handling Mechanisms
+1. **Input Validation**:
+   - File type whitelisting (.png, .jpg, .bmp)
+   - Maximum file size enforcement (10MB)
+   - Empty field checks
+
+2. **Exception Handling**:
+   - Try/except blocks around OCR operations
+   - Network error handling for external dependencies
+   - Memory overflow protection for large files
+
+3. **User Feedback**:
+   - Color-coded status messages
+   - Detailed error logs in main.log
+   - Graceful degradation on failure
 
 ## Dependencies
 
@@ -51,8 +153,8 @@ The project requires the following Python packages (see `requirements.txt` for s
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request.
-you want to descuss ? see (my portfolio)[..\khalillaatiris]
+Contributions are welcome! Please fork the repository and submit a pull request.  
+Want to discuss? See my portfolio [khalillaatiris](https://khalillaatiris.github.io/)
 
 ## License
 
